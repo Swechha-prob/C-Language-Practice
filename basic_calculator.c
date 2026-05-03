@@ -9,4 +9,5 @@ int main{
     printf("Subtraction: %f\n", x-y);
     printf("Multiplication: %f\n", x*y);
     printf("Division: %f", x/y);
+    return 0;
 }
