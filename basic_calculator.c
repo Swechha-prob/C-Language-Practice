@@ -1,13 +1,27 @@
 #include <stdio.h>
-int main{
+int main(){
     float x,y;
-    printf("Enter num1:");
+    char symbol;
+    printf("enter num1: ");
     scanf("%f", &x);
-    printf("Enter num2:");
-    scanf("%f", &x);
-    printf("Addition: %f\n", x+y);
-    printf("Subtraction: %f\n", x-y);
-    printf("Multiplication: %f\n", x*y);
-    printf("Division: %f", x/y);
+    printf("enter num2: ");
+    scanf("%f", &y);
+    // Enter the symbol
+    printf("enter Symbol: ");
+    scanf(" %c", &symbol); 
+    if (symbol=='+'){
+    printf("Addition: %f", x+y);}
+    else if (symbol=='-'){
+    printf("Subtraction: %f", x-y);}
+    else if (symbol=='*'){
+    printf("Multiplication: %f", x*y);}
+    else if (symbol=='/'){
+        if (y==0){
+            printf("Zero in the denominator");
+        }
+        else{
+            printf("Division: %f", x/y);
+        }
+    }
     return 0;
 }
