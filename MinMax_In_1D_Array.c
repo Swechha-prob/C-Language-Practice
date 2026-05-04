@@ -23,4 +23,5 @@ int main(){
     }
     printf("\nMinimum element: %d\n", min);
     printf("Maximum element: %d", max);
+    return 0
 }
