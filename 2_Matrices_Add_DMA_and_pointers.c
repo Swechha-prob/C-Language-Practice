@@ -30,6 +30,7 @@ int main() {
     for (int i = 0; i < n; i++) {
         for(int j = 0; j < m; j++){
             *(*(sum + i) + j) = *(*(mat1 + i) + j) + *(*(mat2 + i) + j);
+            //same as sum[i][j]=mat1[i][j]+mat2[i][j]; 
         }
     }
     printf("\nSum of matrices:\n");
